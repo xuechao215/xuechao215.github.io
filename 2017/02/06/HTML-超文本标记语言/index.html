@@ -22,7 +22,7 @@
 <meta property="og:description" content="HTML:超级文本标记语言(HyperText Markup Language),在浏览器上运行的一种标记语言.
 
 标签简介基本模式123456789&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;    &amp;lt;head&amp;gt;        &amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;        &amp;lt;title&amp;gt;Document">
-<meta property="og:updated_time" content="2017-02-06T12:44:16.403Z">
+<meta property="og:updated_time" content="2017-02-06T12:54:48.973Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML--超文本标记语言">
 <meta name="twitter:description" content="HTML:超级文本标记语言(HyperText Markup Language),在浏览器上运行的一种标记语言.
@@ -207,7 +207,9 @@
 </ul>
 </li>
 </ul>
-<h3 id="Head标签"><a href="#Head标签" class="headerlink" title="Head标签"></a>Head标签</h3><p>*用于存放:title(必选),meta,style,script,link</p>
+<h3 id="Head标签"><a href="#Head标签" class="headerlink" title="Head标签"></a>Head标签</h3><ul>
+<li>用于存放:title(必选),meta,style,script,link</li>
+</ul>
 <h3 id="meta标签的用法"><a href="#meta标签的用法" class="headerlink" title="meta标签的用法"></a>meta标签的用法</h3><ul>
 <li>title标签的用法及作用<ul>
 <li>作用:title在SEO中占有很大的权重</li>
@@ -227,8 +229,12 @@
 <li>GBK存储一个汉字占2个字节</li>
 </ul>
 <h3 id="标签的分类"><a href="#标签的分类" class="headerlink" title="标签的分类"></a>标签的分类</h3><ol>
-<li>双标签:有开始有结束,开始与结束之间有内容<br> <h1></h1>,<p></p></li>
-<li>单标签:只有一个标签,自己闭合自己<br> <hr>,<br></li>
+<li>双标签:有开始有结束,开始与结束之间有内容<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span>,<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li>单标签:只有一个标签,自己闭合自己<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">hr</span>/&gt;</span></div></pre></td></tr></table></figure>
+</li>
 </ol>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>篮球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>足球<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
 <ul>
@@ -243,8 +249,7 @@
 <ul>
 <li>ol:ordered list</li>
 </ul>
-<p>####自定义列表</p>
-<ul>
+<h4 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h4><ul>
 <li>作用:显示一段格式自定义的数据</li>
 </ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>乔丹<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>科比<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>邓肯<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>麦迪<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></div></pre></td></tr></table></figure>
@@ -289,7 +294,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">爱好: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span> 篮球 <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span> 足球 <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span> 羽毛球</div></pre></td></tr></table></figure>
 </li>
 <li><p>按钮</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"发送"</span>&gt;</span></div><div class="line">``` </div><div class="line"></div><div class="line">* 重置按钮:将页面上修改的信息复原成原始状态</div><div class="line">```html</div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">value</span>= <span class="string">"重置"</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"发送"</span>&gt;</span></div><div class="line">``` </div><div class="line"></div><div class="line"></div><div class="line">* 重置按钮:将页面上修改的信息复原成原始状态</div><div class="line">```html</div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">value</span>= <span class="string">"重置"</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>图片按钮:可以点击的图片</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"image"</span> <span class="attr">src</span>=<span class="string">"test.png"</span>&gt;</span></div></pre></td></tr></table></figure>
